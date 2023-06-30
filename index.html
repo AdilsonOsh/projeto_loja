@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Art Fast Food</h1>
+        </div>
+        <div class="botao-menu">
+            <button type="button">Abrir o menu</button>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    Loja
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Sobre a loja</a>
+                        </li>
+                        <li>
+                            <a href="#">Formas de pagamento</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Produtos
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Cardápio</a>
+                        </li>
+                        <li>
+                            <a href="#">Acompanhamentos</a>
+                        </li>
+                        <li>
+                            <a href="#">Bebidas</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <div class="container conteudo">
+        <main>
+            <section class="loja">
+                <h2>Sobre a loja</h2>
+                <article class="produto">
+                    <a>
+                        <img src="./imagens/capa.jpg" alt="Imagem de Capa">
+                        <h3>
+                            A hamburgueria artesanal está com novidades em seu cardápio e para isso preparamos preços especiais
+                        </h3>
+                    </a>
+                </article>
+            </section>
+            <section>
+                <h2>Produtos</h2>
+                <div class="produtos">
+                    <article class="produto">
+                        <img src="./imagens/carne.jpg" alt="Hamburguer de carne"/>
+                        <h3>Carne</h3>
+                            <p>
+                                Com queijo cheddar
+                            </p>
+                            <strong>R$ 13,00</strong>
+                            <button type="button">Comprar</button>
+                    </article>
+                    <article class="produto">
+                        <img src="./imagens/frango.jpg" alt="Hamburguer de frango"/>
+                        <h3>Frango</h3>
+                            <p>
+                                Com peito de peru
+                            </p>
+                            <strong>R$ 11,00</strong>
+                            <button type="button">Comprar</button>
+                    </article>
+                    <article class="produto">
+                        <img src="./imagens/bacon.jpg" alt="Hamburguer de bacon"/>
+                        <h3>Bacon</h3>
+                            <p>
+                                Com alface, tomate e pickles
+                            </p>
+                            <strong>R$ 15,00</strong>
+                            <button type="button">Comprar</button>
+                    </article>
+                    <article class="produto">
+                        <img src="./imagens/fritas.jpg" alt="Batata frita"/>
+                        <h3>Batata Frita</h3>
+                            <p>
+                                Batata Frita com queijo
+                            </p>
+                            <strong>R$ 6,00</strong>
+                            <button type="button">Comprar</button>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu button').click(function() {
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>
